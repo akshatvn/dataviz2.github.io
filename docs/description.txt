@@ -1,0 +1,4 @@
+The image is available here https://akshatvn.github.io/dataviz2.github.io/
+
+On the x-axis is the year, and on the y-axis is the deviation from the corresponding temperatures from 1951 to 1981 means. The various colors of the lines depict different zones as mapped in the legend. From the chart it is evident that deviations have gone up in the last 100 years in all 8 zones (and the global average in thick purple line). The highest absolute deviations are closest to the poles (red and orange lines). They also seem to be roughly mirroring each other across the global average. The data selected is only from the zonal means sheet, and only the exclusive (non-overlapping) smallest zones and the global average are mapped here. 
+

@@ -2445,7 +2445,7 @@ var vis = d3.select("#visualisation"),
     left: 80
   },
   // the X and Y axes
-  startYear=1960,
+  startYear=1921,
   endYear=2021
   xScale = d3.scale.linear().range([MARGINS.left, WIDTH - 3*MARGINS.right]).domain([startYear,endYear]),
   yScale = d3.scale.linear().range([HEIGHT - 3.5*MARGINS.top, MARGINS.bottom]).domain([-2.8,3.4]),
@@ -2492,25 +2492,25 @@ vis.append("svg:text")
 
 
 var lineColorMap = {
-   "Glob": "black",
+   "Glob": "purple",
 
-   "NHem": "red",
-   "SHem": "lime",
+   // "NHem": "red",
+   // "SHem": "lime",
 
-   "24N-90N": "green",
+   // "24N-90N": "green",
 
-   "64N-90N": "cyan",
-   "44N-64N": "purple",
-   "24N-44N": "brown",
-   "EQU-24N": "yellow",
+   "64N-90N": "red",
+   "44N-64N": "lime",
+   "24N-44N": "grey",
+   "EQU-24N": "blue",
 
-   "24S-24N": "blue",
+   // "24S-24N": "yellow",
 
    "24S-EQU": "pink",
-   "44S-24S": "grey",
-   "64S-44S": "teal",
+   "44S-24S": "brown",
+   "64S-44S": "Magenta",
    "90S-64S": "orange",
-   "90S-24S": "Magenta"
+   // "90S-24S": "magenta"
 }
 
 console.log(allData.length)
@@ -2529,7 +2529,7 @@ vis.append('rect')
   .attr('x', legendX-20)
   .attr('y', legendY-40)
   .attr('width', 120)
-  .attr('height', 310)
+  .attr('height', 220)
   .attr('stroke', 'black')
   .attr("stroke-width","0.1")
   .attr('fill', 'white');
@@ -2572,7 +2572,7 @@ for (const l in lineColorMap) {
     .style("font-size", "15px")
     .attr("alignment-baseline","middle")
   legendY = legendY + 16;
-  if (l == "SHem" || l == "EQU-24N" || l == "24S-24N") legendY = legendY + 15;
+  if (l == "Glob" || l == "EQU-24N" || l == "24S-24N") legendY = legendY + 15;
 
 }
 </script>
